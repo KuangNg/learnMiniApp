@@ -1,3 +1,13 @@
 <!--pages/home/home.wxml-->
-<text class="title">Hello World</text>
-<button size="mini">按钮</button>
+<!-- 1.小程序的数据绑定 -->
+<view>hi {{name}}</view>
+
+<!-- 循环 wx:for  -->
+<!-- item 是系统自创建的属性 代表循环的每一项 -->
+<view wx:for ="{{students}}">名字：{{item.name}}---- 年龄：{{item.age}}</view>
+
+<view>当前计数：{{count}}</view>
+<button size="mini" bindtap="handAdd">+</button>
+<button size="mini" bindtap="handSub">-</button>
+
+

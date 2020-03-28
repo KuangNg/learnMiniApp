@@ -5,7 +5,29 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+      name:"kuang",
+      students:[
+        {id:1,age:18,name:'kobe'},
+        {id:2,age:16,name:'bike'},
+        {id:3,age:18,name:'bulav'},
+        {id:4,age:19,name:"miko"},
+      ],
+      count:0
+  },
+  handAdd(){
+    // console.log("按钮点击了");
+    //1. 错误的做法：界面是不会刷新
+    // this.data.count += 1
+    //2.this.setData
+    this.setData({
+      count : this.data.count+1
+    })
+    
+  },
+  handSub(){
+    this.setData({
+      count: this.data.count-1
+    })
   },
 
   /**

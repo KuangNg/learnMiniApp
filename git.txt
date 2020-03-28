@@ -1,0 +1,18 @@
+1.创始化git项目  git init
+2.git add .
+3.git commit -m '初始化项目'
+4. 远程连接仓库 git remote add origin + 仓库地址
+5. 关联 git push -u origin master
+
+6.打上tag : git tag 名称
+git status 状态
+git log 可以看到各分支 的标识码
+git tag 可以查看本地tag
+
+7.回退 git reset --hard +标识码   (hard  表示强制 ，可以不加)
+
+8.把tag push 到远程仓库  ：  git push 
+
+####从远程仓库将代码当下来
+git clone 地址
+git checkou tag名称
