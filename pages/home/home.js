@@ -1,17 +1,34 @@
 // pages/home/home.js
-Page({
+const app = new getApp()
+// 获取到全局变量
+console.log(app.globalData.name);
 
+Page({
+  
   /**
    * 页面的初始数据
    */
   data: {
-
+    list:[]
   },
-
+  // event 是系统内置的形参
+  onGetUserInfo(event) {
+    console.log(event);
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    wx.request({
+      url: 'http://123.207.32.32:8000/recommend',
+      success:(res)=>{
+        console.log(res);
+        const data = res.data
+        this.setData({
+          list:data
+        })
+      }
+    })
 
   },
 

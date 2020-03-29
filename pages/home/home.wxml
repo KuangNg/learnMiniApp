@@ -1,3 +1,16 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hello World</text>
 <button size="mini">按钮</button>
+<!-- 第二种获取用户信息 open-type="getUserInfo" bindgetuserinfo="onGetUserInfo"-->
+<button size="mini" open-type="getUserInfo" bindgetuserinfo="onGetUserInfo">获取授权</button>
+
+
+<!-- 第三种获取用户信息 -->
+<!-- 内置组件 <open-data >-->
+<!--  type ="userNickName" 用户的wx名称 -->
+<view>
+  微信昵称：<open-data type ="userNickName"></open-data>
+  微信头像：<open-data type="userAvatarUrl"></open-data>
+</view>
+
+
