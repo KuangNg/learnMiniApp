@@ -1,0 +1,20 @@
+<!--pages/text/text.wxml-->
+<text>你好，小程序\n</text>
+<text>你好，小程序01\n</text>
+
+<!-- 2.selectable: true--》表示文本长按可以选中   false --》 表示不可以长按 -->
+<!-- 这两种都代表为true -->
+<text selectable="{{true}}">hello</text>
+<text selectable>hello\n</text>
+
+<!-- 3.space : 决定文本空格的大小 -->
+<!-- ensp:半个中文字符大小 -->
+<!-- emsp:一个中文字符大小 -->
+<text>Hello World\n</text>
+<text space="nbsp">Hello World\n</text>
+<text space="ensp">Hello World\n</text>
+<text space="emsp">Hello World\n</text>
+
+<!-- 4.decode属性：是否解码文本 -->
+<text decode="{{true}}"> 5 &gt; 3 \n</text>
+<text decode> 2 &lt; 3</text>

@@ -1,0 +1,19 @@
+/* pages/view/view.wxss */
+.box1{
+  width: 200px;
+  height: 200px;
+  background-color: royalblue;
+}
+.box1-hover{
+  background-color: salmon;
+  
+}
+.box2{
+  width: 100px;
+  height: 100px;
+  background-color: saddlebrown;
+}
+.box2-hover{
+  font-size: 30px;
+  background-color: red;
+}

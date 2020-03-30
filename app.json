@@ -1,6 +1,12 @@
 {
   "pages": [
+    "pages/image-test/image-test",
+    "pages/scroll/scroll-view",
+    "pages/input/input",
+    "pages/view/view",
+    "pages/text/text",
     "pages/home/home",
     "pages/about/about"
-  ]
+  ],
+  "sitemapLocation": "sitemap88.json"
 }

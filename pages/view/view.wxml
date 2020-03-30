@@ -1,0 +1,7 @@
+<!--pages/view/view.wxml-->
+<!-- hover-stop-propagation 为true 阻止冒泡行为 -->
+<view class="box1" hover-class="box1-hover">
+    <view class="box2" hover-class="box2-hover" hover-stop-propagation>box2</view>
+</view>
+<!--  hover-stay-time :设置点击后，效果停留的时间  hover-start-time 为设置多少时间后才显示点击效果-->
+<view class="box2" hover-class="box2-hover" hover-start-time="{{1}}" hover-stay-time="{{1000}}">hha</view>

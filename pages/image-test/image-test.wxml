@@ -1,0 +1,20 @@
+<!--pages/image-test/image-test.wxml-->
+<!-- 本地图片(相对路径或者绝对路径) -->
+<!-- 默认宽高 320*240 -->
+<!-- <image src="../../assets/image/207a202aead6d53a468fbdfc430cca17.jpeg"></image>
+<image src="/assets/image/207a202aead6d53a468fbdfc430cca17.jpeg"></image> -->
+
+<!-- 远程图片地址 -->
+<!-- <image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image> -->
+
+<!-- mode 图片裁剪、缩放的模式 -->
+<image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" mode="aspectFill"></image>
+<view>-----------------------</view>
+<image src="{{imagePath}}"></image>
+<button bindtap="handleChooseImg">选中图片</button>
+
+<!-- bindload :图片完成加载时触发-->
+<image bindload="handleLoad" src="/assets/image/207a202aead6d53a468fbdfc430cca17.jpeg"></image>
+
+<!-- lazy-load: 图片懒加载 -->
+<image bindload="handleLoad" src="/assets/image/207a202aead6d53a468fbdfc430cca17.jpeg" lazy-load wx:for="{{10}}"></image>

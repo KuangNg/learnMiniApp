@@ -1,0 +1,15 @@
+<!--pages/input/input.wxml-->
+<!-- 1.value :默认值 -->
+<input value="hh"></input>
+
+<!-- type:决定键盘类型（文本输入键盘/数子/身份证） -->
+<input type="nummber"></input>
+
+<!-- password  true:暗文 -->
+<input password="{{true}}"></input>
+
+<!-- 占位符 -->
+<input placeholder="请输入内容"></input>
+
+<!-- input 点击事件 -->
+<input bindinput="onInput" bindfocus="onFocus" bindblur="onBlur"></input>
