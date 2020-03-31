@@ -1,2 +1,5 @@
 <!--pages/about/about.wxml-->
 <text>pages/about/about.wxml</text>
+<view>
+    <view>导航</view>
+</view>

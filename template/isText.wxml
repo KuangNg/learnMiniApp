@@ -1,0 +1,6 @@
+<template name = "isText">
+	<view>
+		<view>我是文本模板</view>
+	</view>
+
+</template>

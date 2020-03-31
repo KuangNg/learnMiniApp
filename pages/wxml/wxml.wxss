@@ -1,0 +1,14 @@
+/* pages/wxml/wxml.wxss */
+
+.box{
+  width: 200rpx;
+  height: 200rpx;
+  text-align: center;
+  line-height: 200rpx;
+  border: 1px solid #CCC;
+}
+
+.active {
+  background-color: coral;
+  color: chartreuse;
+}

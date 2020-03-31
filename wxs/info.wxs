@@ -1,0 +1,10 @@
+var name = "张三";
+var age = 18;
+var sum = function (num1, num2) {
+  return num1 + num2
+}
+module.exports = {
+  name: name,
+  age: age,
+  sum: sum
+}

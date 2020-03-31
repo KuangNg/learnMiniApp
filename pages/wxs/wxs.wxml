@@ -1,0 +1,26 @@
+<!--pages/wxs/wxs.wxml-->
+
+<!-- 第一种方式 直接到wxml页面中定义 -->
+<!-- <wxs module="info">
+  var name = "张三";
+  var age  = 18;
+  var sum = function (num1,num2){
+    return num1+num2
+  }
+  module.exports ={
+    name:name,
+    age:age,
+    sum:sum
+  }
+</wxs> -->
+<!-- 第二种方式 在单独文件中定义 -->
+<!-- 不能使用绝对路径 -->
+<wxs src="../../wxs/info.wxs" module = "info"/>
+<view>{{info.name}}</view>
+<view>{{info.age}}</view>
+<view>{{info.sum(10,20)}}</view>
+
+
+<!-- wxs 案例 -->
+<wxs src = "../../wxs/format.wxs" module = "prices"/>
+<view>{{prices.priceFormat(price,3)}}</view>
