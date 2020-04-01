@@ -1,6 +1,9 @@
 {
   "pages": [
+    "pages/touch/touch",
     "pages/home/home",
     "pages/about/about"
-  ]
+    
+  ],
+  "sitemapLocation": "sitemap32.json"
 }

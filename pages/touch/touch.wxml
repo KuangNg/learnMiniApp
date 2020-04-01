@@ -1,0 +1,32 @@
+<!--pages/touch/touch.wxml-->
+<!-- 手指触摸事件 -->
+<view class="box" bindtouchstart="handleTouchStart" bindtouchmove="handleTouchMove" bindtouchend="handleTouchEnd" bindtap="handleTap" bindlongtap="handleLongTap"></view>
+
+<view class="outer" id="outer" bindtap="handleOuter">
+	外层的view
+	<view class="inner" id="inner" bindtap="handleInner">内存的view</view>
+</view>
+
+<!-- 获取事件传参 通过 :data-自定义name = ""  传递到事件里-->
+<view class="goods">
+	<block wx:for="{{goods}}"  wx:key="index">
+		<view bindtap="handleClick" class="item" data-index="{{index}}" data-item="{{item}}">{{item}}</view>
+	</block>
+
+</view>
+
+<!-- 事件捕获和冒泡 -->
+<!-- 
+
+    事件捕获capture-bind:tap
+    bind:表示一层层的捕获，从外到里
+    catch：捕获到目标元素就不会再往下执行
+
+    bindtap 函数绑定会触发从里到外的冒泡
+    
+ -->
+<view class="view1" capture-bind:tap="handleCaptureView1" bindtap="handleBindView1">
+	<view class="view2" capture-bind:tap="handleCaptureView2" catchtap="handleBindView2">
+		<view class="view3" capture-bind:tap="handleCaptureView3" bindtap="handleBindView3"></view>
+	</view>
+</view>

@@ -1,0 +1,43 @@
+/* pages/touch/touch.wxss */
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+}
+
+.outer {
+  width: 200px;
+  height: 200px;
+  background-color: darkgreen;
+}
+.inner{
+  width: 100px;
+  height: 100px;
+  background-color: darkorange;
+}
+
+.goods{
+  margin-top: 20px;
+  display: flex;
+}
+
+.goods view {
+  flex: 1;
+  text-align: center;
+}
+
+.view1 {
+  width: 300px;
+  height: 300px;
+  background-color: darkred;
+}
+.view2{
+  width: 200px;
+  height: 200px;
+  background-color: firebrick;
+}
+.view3 {
+  width: 100px;
+  height: 100px;
+  background-color: hotpink;
+}
