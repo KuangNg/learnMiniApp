@@ -1,3 +1,42 @@
 <!--pages/home/home.wxml-->
-<text class="title">Hello World</text>
+<text class="title" >Hello World</text>
 <button size="mini">按钮</button>
+
+
+<!-- 自定义组件的引入 -->
+<my-cpn/>
+<!-- 外界向组件中传值、样式 -->
+<my-cpn textval="哈哈哈" textstyle="blue"/>
+<my-cpn textval="呵呵呵" textstyle="orange"/>
+
+
+<view>---------------------------------</view>
+<!-- 组件内部发出的事件 -->
+<view>当前计数：{{current}}</view>
+<my-event bind:add="handleAdd"/>
+
+<view>---------------------------------</view>
+<!-- 修改组件的数据 -->
+<button size="mini" bindtap="handleAddClick">修改组件的计数</button>
+<my-sel id = "mySel-id" />
+
+<!--插槽slot 的使用  
+1.给每个插槽起一个名字：name属性
+2.必须在component对象中添加一个选项：options -> mutipleSlots:true
+-->
+<view>---------------------------------</view>
+<button size="mini" bindtap="hanleIsShow">切换显示</button>
+<block wx:if = "{{isshow}}">
+<my-slot>
+<button slot = "slot2">我的插槽的组件</button>
+<text slot = "slot1">我是插槽文本</text>
+<slider slot="slot3"></slider>
+</my-slot>
+</block>
+
+
+
+
+<!-- tab-control 案例练习 -->
+<tab-control textval="{{['衣服','裤子','帽子']}}" bind:textclick = "handleTabClick"/>
+
