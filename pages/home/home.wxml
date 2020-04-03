@@ -1,3 +1,11 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hello World</text>
 <button size="mini">按钮</button>
+
+<button bindtap="handleShowToast" size="mini">Toast</button>
+<button bindtap="handleShowModal" size="mini">Modal</button>
+<button bindtap="handleShowLoading" size="mini">Loading</button>
+<button bindtap="handleShowActionSheet" size="mini">ActionSheet</button>
+
+<!-- 分享按钮 -->
+<button open-type="share">分享</button>
