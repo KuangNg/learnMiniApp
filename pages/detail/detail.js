@@ -1,18 +1,20 @@
-// pages/home/home.js
+// pages/detail/detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    title:"hhh"
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // 页面加载，就获取到url中传过来的数据
+    console.log(options);
+    
   },
 
   /**
@@ -40,7 +42,17 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
+    // 1.获取首页的页面对象
+    // getCurrentPages 当前所有栈的页面
+    const pages =  getCurrentPages()
+    // console.log(pages); 返回一个数组，包含当前页和前一页
+    
+    const home = pages[pages.length - 2]
 
+    // 2.调用页面对象的setData
+    home.setData({
+      title:"修改后-----呵呵"
+    })
   },
 
   /**
